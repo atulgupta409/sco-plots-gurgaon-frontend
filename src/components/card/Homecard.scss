@@ -1,0 +1,74 @@
+.homecard_main {
+    height: 366px;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    .property_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card_arrow {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 34px;
+    }
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 110px;
+        padding: 28px 10px 10px;
+        color: #fff;
+        background: linear-gradient(-180deg, #ffffff0d, #000 70.71%);
+        h3 {
+            font-size: 23px;
+        }
+    }
+}
+.scroll_btn {
+    text-align: right;
+    margin-top: 20px;
+    .scroll_icon {
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .scroll-left {
+        color: gray;
+        margin-right: 11px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homecard_main {
+        height: 300px;
+        .card_arrow {
+            width: 25px;
+        }
+        .overlay {
+            height: 97px;
+            padding: 37px 10px 10px;
+            h3 {
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+            p {
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin-bottom: 0;
+            }
+            .book_now {
+                background-color: transparent;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 16px;
+                font-size: 12px;
+                padding: 5px 12px;
+            }
+        }
+    }
+    .popular_card {
+        height: 233px;
+    }
+}
